@@ -9,9 +9,10 @@ function xjModal(somefn) {
 	borbg.style.width="100%";
 	borbg.style.height="1000px";
 	borbg.style.background="blackground";
-	borbg.style.opacity="0.8";
+	borbg.style.opacity="0.6";
 	borbg.style.zIndex="8";
 	borbg.style.top="0";
+	borbg.style.marginLeft='-8px';
 	borbg.style.marginLeft="0!important";
 	borbg.style.position="fixed";
 	borbg.style.background="black";
@@ -34,8 +35,9 @@ function xjModal(somefn) {
 	modal.style.position="fixed";
 	modal.style.backgroundColor="white";
 	//modal.style.margin=(myScreenH-220)/4+"px"+" "+(myScreenW-200)/16+"px";
-	modal.style.marginTop=(myScreenH-220)/4+"px";
+	modal.style.marginTop=(myScreenH-220)/8+"px";
 	modal.style.left='5%';
+	modal.style.marginLeft='-4px';
 	var modalHead=document.createElement('div');//头部
 	modalHead.setAttribute("id","modalHead");
 	modalHead.style.textAlign="center";
@@ -72,6 +74,9 @@ function xjModal(somefn) {
 	radio1.style.width="20px";
 	radio2.style.width="20px";
 	radio3.style.width="20px";
+	radio1.style.marginLeft="8px";
+	radio2.style.marginLeft="8px";
+	radio3.style.marginLeft="8px";
 	//radio1.style.marginTop="5px";
 	//radio2.style.marginTop="5px";
 	//radio3.style.marginTop="5px";
@@ -141,8 +146,8 @@ function xjModal(somefn) {
 	btncancle.style.float="right";
 	btnSrue.style.marginLeft="16%";
 	btncancle.style.marginRight="16%";	
-	btnSrue.style.border="1px solid rgba(102,102,102,0.8)";
-	btncancle.style.border="1px solid rgba(102,102,102,0.8)";
+	btnSrue.style.border="1px solid rgba(102,102,102,0.5)";
+	btncancle.style.border="1px solid rgba(102,102,102,0.5)";
 	btncancle.addEventListener("click",function () {
     	borbg.style.display="none";
     	modal.style.display="none";
